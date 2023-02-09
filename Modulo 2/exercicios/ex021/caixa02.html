@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(45deg,#5284C2 50%, #67A7F5, #B1D1F7, #315075, #B1D1F7);
+            background-attachment: fixed;
+            margin: 0px;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgba(204, 233, 233, 0.85);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.591);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: rgb(27, 12, 243);
+            font-weight: bold;
+            margin-right: 30px;
+            box-shadow: 4px 4px 9px 0px #01070f88;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        article {
+            background-color: lightcyan;
+            padding: 5px;
+        }
+
+        article > aside {
+            background-color: rgb(188, 218, 218);
+        }
+        
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #01070ffd;
+            color: white;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sugestão de Sites</h1>
+        <nav>
+            <a href="https://canaltech.com.br" target="_blank">Canal Tech</a>
+            <a href="https://www.devmedia.com.br" target="_blank">DevMedia</a>
+            <a href="https://olhardigital.com.br" target="_blank">Olhar Digital</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <article>
+                <h2>Notícias sobre Mundo Tech</h2>
+                <p>Nova geração do celular mais potente da Samsung veio com processador ainda mais rápido e câmera de 200 MP. Modelo chega a preços de até R$ 12.499.</p>
+                <aside>
+                    <p>Artigo escrito por <strong> Jean Bruno</strong></p>
+                </aside>
+            </article>
+        </section>
+        <section id="noticias">
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Jean Bruno</p>
+    </footer>
+</body>
+</html>
