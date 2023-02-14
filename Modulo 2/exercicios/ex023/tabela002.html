@@ -13,6 +13,7 @@
         table {
             border-collapse: collapse;
             width: 450px;
+            position: relative;
         }
 
         td, th {
@@ -32,6 +33,12 @@
             color: white;
         }
 
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(63, 72, 243);
+        }
+
         tbody > tr:nth-child(2n) {
             background-color: rgb(191, 185, 242);
         }
@@ -40,9 +47,7 @@
             text-align: right;
         }
 
-        #fixo {
-            back
-        }
+       
 
     </style>
 </head>
@@ -60,7 +65,7 @@
     <table>
         <caption>População das Unidades Federativas</caption>
         <thead>
-            <tr id="fixo">
+            <tr>
                 <th scope="col">Estado</th>
                 <th scope="col" style="width: 50px;">População</th>
             </tr>
