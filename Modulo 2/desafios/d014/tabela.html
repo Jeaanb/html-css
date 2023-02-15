@@ -12,15 +12,20 @@
         }
 
         table {
+            width: 450px;
             border-collapse: collapse;
             text-align: center;
             border: 1px solid lightgrey;
         }
 
         th, td {
-            width: 50px;
-            padding: 10px;
+            padding: 5px;
             border: 1px solid black;
+        }
+
+        tr.cabecalho {
+            color: white;
+            background-color: rgb(139, 138, 138);
         }
 
     </style>
@@ -28,14 +33,17 @@
 <body>
     <table>
         <thead>
-            <tr>
-                <th>Área</th>
-                <th>Disciplinas</th>
-                <th colspan="2" >Notas</th>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
-                <th>Média</th>
+            <tr class="cabecalho">
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2">Média</th>
             </tr>
+            <tr class="cabecalho">
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
             <tbody>
                 <tr>
                     <th rowspan="4">Exatas</th>
@@ -62,8 +70,8 @@
                     <td>8</td>
                     <td>8,5</td>
                 </tr>
-                <tr>
-                    <th colspan="5" style="text-align: left;">Média de Exatas</th>
+                <tr class="cabecalho">
+                    <th colspan="4" style="text-align: left;"  scope="rowgroup">Média de Exatas</th>
                     <td>8,3</td>
                 </tr>
                 <tr>
@@ -79,12 +87,11 @@
                     <td>8,5</td>
                     <td>9,25</td>
                 </tr>
-                <tr>
-                    <th colspan="5" style="text-align: left;">Média de Humanas</th>
+                <tr class="cabecalho">
+                    <th colspan="4" style="text-align: left;">Média de Humanas</th>
                     <td>9,1</td>
                 </tr>
             </tbody>
-        </thead>
     </table>
 </body>
 </html>
