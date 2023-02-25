@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      box-sizing: border-box;
+      background-image: linear-gradient(to right, #810ad1, #9007F5);
+    }
+    
+    h1 {
+      color: #222222;
+      font-size: 2em;
+      text-align: center;
+    }
+
+    .container {
+      min-width: 100vh;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      background-color: rgb(255, 255, 255);
+      border: 1px solid black;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    .submit {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .botoes {
+      padding: 10px;
+      font-size: 1.2em;
+      border-radius: 10px;
+      background-color: #810ad196;
+      color: white;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    .botoes:hover {
+      background-color: white;
+      color: #9007F5;
+    }
+
+    .input {
+      border-radius: 3px;
+      border: 1px solid rgb(118, 42, 165);
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+      <div class="box">
+        <h1>Teste de Formulário</h1>
+        <form action="cadastro.php" method="get" autocomplete="on">
+          <p>
+            <label for="iname">Nome</label class="text">
+            <input type="text" name="name" id="iname" required maxlength="30" placeholder="Nome Completo" autocomplete="name" class="input">
+          </p>
+          <p>
+              <label for="iaverage">Média</label class="text">
+              <input type="number" name="average" id="iaverage" min="0" max="10" placeholder="0 a 10" step="0.1" required value="5" class="input">
+          </p>
+          <p>
+            <label for="imonth">Período Letivo</label class="text">
+            <input type="month" name="month" id="imonth" value="2023-02" class="input">
+          </p>
+          <p>
+            <label for="idate">Dia da Prova</label class="text">
+            <input type="date" name="date" id="idate" value="2023-02-25" class="input">
+          </p>
+          <p>
+            <label for="itime">Hora da Prova</label class="text">
+            <input type="time" name="time" id="itime" value="00:00" class="input">
+          </p>
+          <div class="submit">
+            <p>
+              <div>
+                <input type="submit" value="Enviar" class="botoes">
+                <input type="reset" value="Limpar" class="botoes">
+              </div>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+</body>
+</html>
